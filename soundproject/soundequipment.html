@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound System</title>
+    <style>
+        h1 {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJZDdcXxlId9m6hMjOIf5qFdxnXvrGcy0IA&s");
+            position: absolute;
+            top: 10px;
+            bottom: 0px;
+            right: 55%;
+            left: 0%;
+            color: rgb(255, 255, 255);
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(16, 239, 9, 0.693);
+            
+
+        }
+         
+
+        .hi{
+            margin-left: 50%;
+            margin-top: 1%;
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .ho{
+            margin-left: 50%;
+            margin-top: 10%;
+            width: 230px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+       
+
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text">🥁 Drum Rolls Please...!!!</h1>
+    <img class="hi" src="https://t4.ftcdn.net/jpg/03/10/12/25/360_F_310122501_xnz6svd5HjIlbtB1lKt7Lf6TG1rLeZmS.jpg" alt="Drum" onclick="playdrum()">
+    <audio id="drumSound" src="drum.mp3"></audio>
+
+    <img  class="ho"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk6TPrzmLHHuByUg3NvFA0xXEQijL3vL49pw&s" alt="Gitar" onclick="playgitar()">
+    <audio id="gitarsound" src="gitar.mp3"></audio>
+
+   
+    <script>
+        function playdrum() {
+      const sound = document.getElementById("drumSound");
+      sound.currentTime = 0;
+      sound.play();
+    }
+    function playgitar() {
+      const sound = document.getElementById("gitarsound");
+      sound.currentTime = 0;
+      sound.play();
+    }
+    
+
+    </script>
+</body>
+
+</html>
