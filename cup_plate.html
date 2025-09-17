@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightgray;
+            
+        }
+
+        .plate {
+            border: 1px soild black;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            position: relative;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            align-items: center;
+            display: flex;  
+            translate: 0px 29px;
+            transform: rotateX(70deg);
+            overflow-x: auto;
+
+        }
+
+        .cup {
+            width: 120px;
+            height: 100px;
+            border: 3px solid #303030;
+            border-radius: 15px 15px 50% 50%;
+            border-bottom-width: 8px;
+            box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+
+        }
+
+        .hand {
+            width: 30px;
+            height: 40px;
+            border: 8px solid #303030;
+            border-left: none;
+            border-radius: 0 50% 50% 0;
+            position: absolute;
+            top: 10%;
+            right: -32%;
+            overflow: hidden;
+        }
+
+        .coffee {
+            height: 97px;
+            width: 118px;
+            border: 1px solid #6f4e37;
+            background-color: #6f4e37;
+            border-radius: 15px 15px 100% 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            right: 101%;
+            animation: coffeefill 3s ease-in-out forwards infinite;
+            
+        }
+
+        /* #6f4e37 */
+        @keyframes coffeefill {
+            0% {
+                height: 0px;
+            }
+            100% {
+                height: 85px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="plate">
+        
+       
+    </div>
+     <div class="cup">
+            <div class="coffee"></div>
+            <div class="hand"></div>
+        </div>
+</body>
+
+</html>
